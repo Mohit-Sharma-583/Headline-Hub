@@ -8,17 +8,17 @@ import NotificationPage from "../src/pages/notification/NotificationPage"
 import ProfilePage from "../src/pages/profile/ProfilePage"
 
 function App() {
-return (
+  return (
     <div className='flex max-w-6xl mx-auto'>
-    <Sidebar/>
-    <Routes>
-    <Route path ='/' element = {<HomePage />} />
-    <Route path ='/login' element = {<LoginPage />} />
-    <Route path ='/signup' element = {<SignUpPage />} />
-    <Route path ='/notifications' element = {<NotificationPage />} />
-    <Route path ='/profile/:username' element = {<ProfilePage />} />
-    </Routes>
-    <RightPanel/>
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/signup' element={<SignUpPage />} />
+        <Route path='/notifications' element={<NotificationPage />} />
+        <Route path='/profile/:username' element={<ProfilePage />} />
+      </Routes>
+      <RightPanel />
     </div>
   );
 }
